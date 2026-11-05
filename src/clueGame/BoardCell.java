@@ -14,38 +14,51 @@ public class BoardCell {
 		this.col = col;
 	}
 	//getters and setters
+
 	public int getRow() {
 		return row;
 	}
-	
+
 	public int getCol() {
 		return col;
 	}
-	
+
 	public char getInitial() {
 		return initial;
 	}
-	
+
+	public void setInitial(char initial) {
+		this.initial = initial;
+	}
+
 	public boolean isDoorway() {
 		return doorDirection != DoorDirection.NONE;
 	}
-	
+
 	public DoorDirection getDoorDirection() {
 		return doorDirection;
 	}
-	
+
 	public void setDoorDirection(DoorDirection doorDirection) {
 		this.doorDirection = doorDirection;
 	}
-	
+
 	public boolean isLabel() {
 		return roomLabel;
 	}
-	
-	public void setRoomCenter (boolean roomCenter) {
+
+	public void setLabel(boolean roomLabel) {
+		this.roomLabel = roomLabel;
+	}
+
+	public boolean isRoomCenter() {
+		return roomCenter;
+	}
+
+	public void setRoomCenter(boolean roomCenter) {
 		this.roomCenter = roomCenter;
 	}
-	
+
 	public char getSecretPassage() {
 		return secretPassage;
 	}
@@ -58,5 +71,4 @@ public class BoardCell {
 	public String toString() {
 		return "BoardCell[" + row + "," + col + "," + initial + "]";
 	}
-	
- }
+}

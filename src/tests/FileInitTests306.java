@@ -1,3 +1,4 @@
+
 /*
  * This program tests that config files are loaded properly.
  */

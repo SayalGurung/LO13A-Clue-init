@@ -30,7 +30,7 @@ public class Room {
 		this.centerCell = centerCell;
 	}
 	
-	public void setCenterCell(BoardCell labelCell) {
+	public void setLabelCell(BoardCell labelCell) {
 		this.labelCell = labelCell;
 	}
 	
